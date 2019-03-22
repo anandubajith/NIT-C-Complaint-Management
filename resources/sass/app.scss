@@ -1,0 +1,107 @@
+/*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,video{height:auto;max-width:100%}audio{max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
+
+body {
+  font-family:'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+header {
+  display:flex;
+  background: #7b1fa2;
+  color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  padding: 1em;
+}
+header h1 {
+  flex-grow: 1;
+}
+.nav a{
+  color: #ddd;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1000px;
+  margin: 1em  auto;
+  /* background: green; */
+}
+.complaint, .filter {
+  margin: 0.5em 0;
+  padding: 1em;
+  /* background: green; */
+  display: flex;
+  align-content: center;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.complaint h4{
+  flex-grow: 1;
+
+}
+.upvote {
+  padding: 0.3em 0.5em;
+  margin-right: 1em;
+  border-radius: 100%;
+  background: #eee;
+  text-align: center;
+}
+
+.green {
+  color:#00b248
+}
+
+select {
+  padding: 0.4em;
+  background: #fff;
+  margin-left: 1em;
+  border: 0;
+  outline: 0;
+}
+.filter span {
+line-height: 1.5;
+}
+
+.raise {
+  background: #d50000
+}
+
+.single {
+  flex-direction: column
+}
+.single .title {
+  font-size: 1.51em;
+}
+
+
+.description {
+  line-height: 1.5;
+}
+
+
+
+input  {
+  padding: 1em;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  margin: 1em 0;
+}
+input:focus , textarea:focus {
+  border: 2px solid #7b1fa2;
+  outline: 0;
+}
+
+textarea {
+  padding: 1em;
+  font-family: 'Roboto';
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  height: 300px;
+}
+
+
+input[type="submit"] {
+  border:0;
+  color: #fff;
+  background: #7b1fa2;
+}
