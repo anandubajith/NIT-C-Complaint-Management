@@ -4,7 +4,7 @@
 <div class="complaint single">
     <h1 class="title">Raise a complaint</h1>
     
-    <form action="/new" method="POST">
+    <form action="/complaint/create" method="POST">
         @csrf
         
         <input type="text" name="title" placeholder ="title">

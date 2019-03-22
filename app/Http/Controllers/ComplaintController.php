@@ -9,7 +9,7 @@ class ComplaintController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth',  ['except' => ['show']] );
     }
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ComplaintController extends Controller
     {
         //
 
-        $project = new Complaint();
-        $project->title  = request('title');
-        $project->description = request('description');
-        $project->save();
+        Complaint::create([
+            'title' => request('title'),
+            'description' => request('description')
+        ]);
 
         return redirect()->to('/');
     }
@@ -57,7 +57,7 @@ class ComplaintController extends Controller
      */
     public function show(Complaint $complaint)
     {
-        //
+        return view('single-complaint' , compact('complaint'));
     }
 
     /**
@@ -69,6 +69,8 @@ class ComplaintController extends Controller
     public function edit(Complaint $complaint)
     {
         //
+
+        return 'editing '. $complaint['id'];
     }
 
     /**

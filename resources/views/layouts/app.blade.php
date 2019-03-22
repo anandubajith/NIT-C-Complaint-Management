@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <h1>NIT-C Complaints</h1>
+        <h1><a href="/">NIT-C Complaints </a></h1>
         <span class="nav">
             @guest
                     <i class="fas fa-sign-in-alt"></i>&nbsp;
@@ -30,7 +30,7 @@
             @else
 
             <i class="fas fa-hand-paper"></i>&nbsp;
-            <a href="/new">Raise Complaint</a>
+            <a href="/complaint/create">Raise Complaint</a>
             &nbsp;&nbsp;
             <i class="fas fa-user-circle"></i>
         

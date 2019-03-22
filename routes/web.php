@@ -13,16 +13,15 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 
-// Route::get('/', function () {
-//     return view('homepage');
-// });
+
+Route::get('/complaint/create', 'ComplaintController@create');
+Route::post('/complaint/create', 'ComplaintController@store');
+Route::get('/complaint/{complaint}', 'ComplaintController@show');
+Route::get('/complaint/{complaint}/edit', 'ComplaintController@edit');
+
+
 
 Auth::routes();
-
-Route::get('/new', 'ComplaintController@create');
-Route::post('/new', 'ComplaintController@store');
-
-
 Route::get('/redirect', 'SocialAuthGoogleController@redirect');
 Route::get('/callback', 'SocialAuthGoogleController@callback');
 
