@@ -106,10 +106,8 @@ header h1 {
   flex-grow: 1;
 }
 
-.nav a,
 header a {
-  color: #ddd;
-  text-decoration: none;
+  color: #fff;
 }
 
 main {
@@ -169,7 +167,7 @@ select {
   font-size: 1.51em;
 }
 
-.description {
+.single .description {
   line-height: 1.5;
 }
 
