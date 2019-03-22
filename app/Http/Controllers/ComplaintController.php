@@ -41,10 +41,7 @@ class ComplaintController extends Controller
     {
         //
 
-        Complaint::create([
-            'title' => request('title'),
-            'description' => request('description')
-        ]);
+        Complaint::create(request(['title', 'description']));
 
         return redirect()->to('/');
     }

@@ -7,8 +7,8 @@
     <form action="/complaint/create" method="POST">
         @csrf
         
-        <input type="text" name="title" placeholder ="title">
-        <textarea name="description" id="" cols="30" rows="10"  placeholder="Enter the description"></textarea>
+        <input type="text" name="title" placeholder ="title" required>
+        <textarea name="description" id="" cols="30" rows="10"  placeholder="Enter the description" required></textarea>
        <br><br> <select name="dept" id="">
                 <option value="Department" disabled selected>Department</option>
                 <option value="CSE">Computer Science</option>
