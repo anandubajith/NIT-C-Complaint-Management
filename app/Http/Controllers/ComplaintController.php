@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Auth;
 use App\Complaint;
 use Illuminate\Http\Request;
 
@@ -39,9 +39,11 @@ class ComplaintController extends Controller
      */
     public function store(Request $request)
     {
-        //
-
-        Complaint::create(request(['title', 'description']));
+        Complaint::create([
+            'title' => request('title'),
+            'description' => request('description'),
+            'created_by' => Auth::user()->email
+        ]);
 
         return redirect()->to('/');
     }
