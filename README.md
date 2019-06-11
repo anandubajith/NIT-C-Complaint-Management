@@ -1,4 +1,4 @@
-# NIT-C-Complaint-Management
+# NIT-C Complaint Management System
 
 [![Gitter](https://badges.gitter.im/NITC-ComplaintManagement/community.svg)](https://gitter.im/NITC-ComplaintManagement/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
