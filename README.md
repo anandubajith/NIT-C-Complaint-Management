@@ -4,7 +4,7 @@
 
 ## Project Goals
 - [x] Login using NIT-C Email
-- [x] Single Complaint views
+- [x] Single Complaint view
 - [ ] Categories
 - [ ] User roles (for concerned departments to manage)
 - [ ] Redesign?
