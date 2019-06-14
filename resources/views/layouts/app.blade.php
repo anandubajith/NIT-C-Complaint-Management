@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <h1><a href="/">NIT-C Complaints </a></h1>
+        <h1><a href="/">NIT-C Complaint Management </a></h1>
         <span class="nav">
             @guest
                     <i class="fas fa-sign-in-alt"></i>&nbsp;

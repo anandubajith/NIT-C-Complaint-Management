@@ -12,8 +12,6 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home');
-
-
 Route::get('/complaint/create', 'ComplaintController@create');
 Route::post('/complaint/create', 'ComplaintController@store');
 Route::get('/complaint/{complaint}', 'ComplaintController@show');

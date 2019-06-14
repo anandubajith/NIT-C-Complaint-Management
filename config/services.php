@@ -35,10 +35,11 @@ return [
     ],
 
     'google' => [
-        'client_id' => '588644045277-v5hfatppk9a3h4kvaok4mmt6hlre28gj.apps.googleusercontent.com',
-        'client_secret' => 'q4tftJvHuHANfHPowAofXmG-',
-        'redirect' => 'http://nitc.anandu.net/callback'],
-
+        'client_id'     => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect'      => env('GOOGLE_REDIRECT')
+    ],
+    
     'stripe' => [
         'model' => App\User::class,
         'key' => env('STRIPE_KEY'),
