@@ -15,6 +15,7 @@ class CreateComplaintsTable extends Migration
     {
         Schema::create('complaints', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedInteger('user_id');
             $table->string('title');
             $table->integer('upvotes')->default(0); 
             $table->string('status')->default('pending');

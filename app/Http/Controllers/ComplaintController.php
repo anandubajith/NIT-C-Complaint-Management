@@ -39,10 +39,12 @@ class ComplaintController extends Controller
      */
     public function store(Request $request)
     {
+        // dd(Auth::user()->email);
         Complaint::create([
             'title' => request('title'),
             'description' => request('description'),
-            'created_by' => Auth::user()->email
+            'created_by' => Auth::user()->email,
+            'user_id' => Auth::id()
         ]);
 
         return redirect()->to('/');

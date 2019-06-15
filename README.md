@@ -16,8 +16,6 @@
 
 ## Getting Started
 
-<p>
-
 1. Clone the repo and change to project directory
 
    ```
@@ -50,5 +48,3 @@
     ```shell
     php artisan serve
     ```
-</p>
-</details>
