@@ -6,5 +6,8 @@
     {{ $complaint->updated_at }}
     <p>{{ $complaint->description }}</p>
 
+    <pre>
+        {{ $complaint }}
+    </pre>
 </div>
 @endsection

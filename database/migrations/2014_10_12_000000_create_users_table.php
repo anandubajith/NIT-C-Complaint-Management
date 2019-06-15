@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('google_id');
             $table->string('email')->unique();
+            $table->integer('role')->unsigned()->default(0);
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

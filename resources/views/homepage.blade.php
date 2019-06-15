@@ -5,7 +5,7 @@
             <select name="" id="">
                 <option value="Department" disabled selected>Department</option>
                 <option value="CSE">Computer Science</option>
-                <option value="CSE">Chemical</option>
+                <option value="CHE">Chemical</option>
             </select>
             <select name="" id="">
                     <option value="Department" readonly default>Status</option>
@@ -18,7 +18,7 @@
             <div class="complaint">
             <span class="upvote"><i class="fas fa-angle-up"></i>{{ $complaint->upvotes }}</span>
                 <h4 class="title">{{ $complaint->title }}</h4>
-                <span class="statu`s">Pending</span>
+                <span class="status">{{ ucfirst($complaint->status) }}</span>
             </div>
         </a>
         @endforeach

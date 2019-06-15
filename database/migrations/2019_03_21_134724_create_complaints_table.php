@@ -16,7 +16,8 @@ class CreateComplaintsTable extends Migration
         Schema::create('complaints', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->integer('upvotes')->default(100);
+            $table->integer('upvotes')->default(0); 
+            $table->string('status')->default('pending');
             $table->text('description');
             $table->string('created_by')->nullable();
             $table->timestamps();

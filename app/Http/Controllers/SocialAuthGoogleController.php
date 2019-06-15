@@ -30,6 +30,9 @@ class SocialAuthGoogleController extends Controller
             if($existUser) {
                 Auth::loginUsingId($existUser->id);
             }
+            // TODO
+            // add check for @nitc.ac.in email, redirect to login with message on fail
+            
             else {
                 $user = new User;
                 $user->name = $googleUser->name;

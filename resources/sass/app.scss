@@ -1,5 +1,5 @@
-/*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,video{height:auto;max-width:100%}audio{max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
 @import 'variables';
+@import 'modern-normalize';
 
 body {
   font-family: $fonts;
@@ -11,10 +11,13 @@ header {
   display:flex;
   background: $purple;
   color: #fff;
+  align-items:center;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
   padding: 1em;
   h1 {
     flex-grow: 1;
+    font-size: 1em;
+    font-weight: normal;
   }
   a {
     color: #fff;
@@ -61,7 +64,7 @@ select {
   outline: 0;
 }
 .filter span {
-line-height: 1.5;
+line-height: 2;
 }
 
 .raise {
@@ -113,4 +116,12 @@ input[type="submit"] {
 a .complaint {
   text-decoration: none;
   color: #000;
+}
+
+.btn {
+  background: #7b1fa2;
+  padding: 1em;
+  margin-top: 4em;
+  display: inline-block;
+  color: #fff;
 }
