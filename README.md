@@ -18,19 +18,19 @@
 
 1. Clone the repo and change to project directory
 
-   ```
+   ```sh
    git clone git@github.com:anandubajith/NIT-C-Complaint-Management.git
    cd NIT-C-Complaint-Management
    ```
 2. Install the dependencies
 
-    ```shell
+    ```sh
     composer install
     yarn 
     ```
 3. Setup the env file by copying .env.example
 
-    ```shell
+    ```sh
     cp .env.example .env
     php artisan key:generate
     ```
@@ -40,11 +40,12 @@
 
 
 4. Run the migrations 
-    ```shell
+    ```sh
     php artisan migrate
     ```
 
 5. Run the app
-    ```shell
+    ```sh
     php artisan serve
     ```
+
